@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
+    "@playwright/test": "^1.20.1",
+    "expect-playwright": "^0.8.0",
+    "faker-br": "^0.4.1",
+    "playwright": "^1.19.2"
+  },
+  "scripts": {
+    "tags": "cucumber-js --require cucumber.conf.js --require tests/acceptance/stepDefinitions/**/*.js --format @cucumber/pretty-formatter tests/acceptance/features/**/*.feature --tags",
+    "test": "cucumber-js --require cucumber.conf.js --require tests/acceptance/stepDefinitions/**/*.js --format @cucumber/pretty-formatter tests/acceptance/features/**/*.feature"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "faker-br": "^0.4.1",
+    "moment": "^2.29.2"
+  }
+}
